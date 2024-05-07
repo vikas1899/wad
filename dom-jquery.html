@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Updating DOM with jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Function to update the DOM
+    function updateDOM() {
+        // Select the element with id "content" and change its text
+        $("#content").text("DOM updated with jQuery!");
+        
+        // Append a new paragraph element to the body
+        $("body").append("<p>New paragraph added with jQuery!</p>");
+        
+        // Change the color of all paragraphs to blue
+        $("p").css("color", "blue");
+    }
+    
+    // Call the updateDOM function when the button is clicked
+    $("#updateButton").click(function(){
+        updateDOM();
+    });
+});
+</script>
+</head>
+<body>
+    <!-- Button to trigger the update -->
+    <button id="updateButton">Update DOM</button>
+    
+    <!-- Initial content -->
+    <div id="content">Initial content</div>
+</body>
+</html>

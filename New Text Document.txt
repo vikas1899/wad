@@ -1,0 +1,2 @@
+sudo apt install openssh-server
+sudo service ssh start

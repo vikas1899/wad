@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery example: text()</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 40%;
+            height: 40%;
+            background-color: silver;
+            color: black;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pune Weather Report</h1>
+        <h2>Current Weather:</h2>
+        <h2 id="temperature">30° Celcius</h2>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>    
+    <script>
+        $("#temperature").text("32° Celcius");
+        $("#temperature").css("color","red");
+        // $("#temperature").empty();
+
+    </script>
+</body>
+
+</html>
